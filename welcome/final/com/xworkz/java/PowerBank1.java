@@ -3,7 +3,7 @@ package com.xworkz.java;
 public class PowerBank1 {
 	  static final int  CAPACITY=2000;
 		
-	 void PowerBank1(){
+	 void surya(){
 		int copyCapacity=CAPACITY;
 		copyCapacity++;
 		System.out.println(copyCapacity++);

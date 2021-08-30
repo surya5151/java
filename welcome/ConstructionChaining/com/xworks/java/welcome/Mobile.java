@@ -21,7 +21,7 @@ public class Mobile {
 	}
 
 	Mobile(String brand, String color){
-		//this(brand,color,20000.00);
+		this(brand,color,20000.00);
 		this.brand=brand;
 		this.color=brand;
 		this.price=price;
