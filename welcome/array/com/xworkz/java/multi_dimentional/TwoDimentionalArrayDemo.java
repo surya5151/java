@@ -3,7 +3,7 @@ package com.xworkz.java.multi_dimentional;
 public class TwoDimentionalArrayDemo {
 	public static void main(String[] args) {
 		
-		int[][] arr = new int[3][3];
+		int[][] arr = new int[2][2];
 		
 		int Count=10;
 		for(int i=0; i<arr.length; i++) {

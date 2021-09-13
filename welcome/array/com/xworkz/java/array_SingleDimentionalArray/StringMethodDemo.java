@@ -5,11 +5,11 @@ public class StringMethodDemo {
 		
 		String [] arr= new String[] {"one","two","three","four","five"};
 		
-		//System.out.println(arr);
+		// System.out.println(arr);
 		
-		for(int s=0; s<arr.length; s++) {
+		for(int String = 0; String<arr.length; String++) {
 			
-			System.out.println(arr[s]);
+			System.out.println(arr[String]);
 		}
 	
 	}

@@ -16,5 +16,10 @@
 	<classpathentry kind="src" path="Abstraction"/>
 	<classpathentry kind="src" path="AbstractionClass"/>
 	<classpathentry kind="src" path="InterfaceClass"/>
+	<classpathentry kind="src" path="Object"/>
+	<classpathentry kind="src" path="Encapsulation"/>
+	<classpathentry kind="src" path="array"/>
+	<classpathentry kind="src" path="Arrays"/>
+	<classpathentry kind="src" path="String"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

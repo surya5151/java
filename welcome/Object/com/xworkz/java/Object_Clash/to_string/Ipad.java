@@ -10,7 +10,7 @@ public class Ipad {
 		this.brand=brand;
 		this.ramsize=ramsize;
 		this.cameraQuality=cameraQuality;
-		this.price=price;
+		this.price=price; 
 		
 	}
 	
