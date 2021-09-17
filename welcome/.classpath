@@ -21,5 +21,7 @@
 	<classpathentry kind="src" path="array"/>
 	<classpathentry kind="src" path="Arrays"/>
 	<classpathentry kind="src" path="String"/>
+	<classpathentry kind="src" path="Wrapper Class"/>
+	<classpathentry kind="src" path="Exception"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
