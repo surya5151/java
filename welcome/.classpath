@@ -23,5 +23,7 @@
 	<classpathentry kind="src" path="String"/>
 	<classpathentry kind="src" path="Wrapper Class"/>
 	<classpathentry kind="src" path="Exception"/>
+	<classpathentry kind="src" path="TypeCating"/>
+	<classpathentry kind="src" path="collection"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
