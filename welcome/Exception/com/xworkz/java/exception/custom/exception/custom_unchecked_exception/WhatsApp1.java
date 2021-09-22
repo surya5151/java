@@ -1,6 +1,6 @@
 package com.xworkz.java.exception.custom.exception.custom_unchecked_exception;
 
-public class WhatsApp1 {
+public class WhatsApp1 { 
 	void createGroup(String[] names) {
 		if(names.length>5) {
 			throw new WhatsAppException1("can't create group with more the 5 member...");
