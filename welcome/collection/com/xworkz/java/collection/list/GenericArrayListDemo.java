@@ -1,6 +1,6 @@
 package com.xworkz.java.collection.list;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.Iterator;
 
 public class GenericArrayListDemo {
@@ -25,51 +25,63 @@ public class GenericArrayListDemo {
 		System.out.println(laptoplist);
 		
 		System.out.println("List of the laptop...");
-		Iterator<Laptop> itr=laptoplist.iterator();
-		while(itr.hasNext()) {
-			Laptop lt=itr.next();
-			System.out.println(lt);
+		Iterator<Laptop> laptopItr=laptoplist.iterator();
+		while(laptopItr.hasNext()) {
+			Laptop laptop=laptopItr.next();
+			System.out.println(laptop);
 		}
 		System.out.println("................................");
 		System.out.println("Price less then or equals to 25000rs...........!");
-		Iterator<Laptop> itr1 =laptoplist.iterator();
-		while(itr1.hasNext()) {
-			Laptop lt=itr1.next();
-			if(lt.price<=25000) {
-				System.out.println(lt.brand);
+		Iterator<Laptop> laptopitr1 =laptoplist.iterator();
+		while(laptopitr1.hasNext()) {
+			Laptop laptop=laptopitr1.next();
+			if(laptop.price<=25000) {
+				System.out.println(laptop.brand);
 			}			
 		}
 		System.out.println("................................");
 		System.out.println("List of the Black color laptop...........!");
 
-		Iterator<Laptop> itr2 =laptoplist.iterator();
-		while(itr2.hasNext()) {
-			Laptop lt=itr2.next();
-			if(lt.color.equals("Black")) {
-				System.out.println(lt.brand);
+		Iterator<Laptop> laptopitr2 =laptoplist.iterator();
+		while(laptopitr2.hasNext()) {
+			Laptop laptop=laptopitr2.next();
+			if(laptop.color.equals("Black")) {
+				System.out.println(laptop.brand);
 			}			
 		}
 		System.out.println("................................");
 		System.out.println("Laptop Price <= 25000rs and color is Black  ...........!");
 
-		Iterator<Laptop> itr3 =laptoplist.iterator();
-		while(itr3.hasNext()) {
-			Laptop lt=itr3.next();
-			if(lt.price<=25000 && lt.color.equals("Black")) {
-				System.out.println(lt.brand);
+		Iterator<Laptop> laptopitr3 =laptoplist.iterator();
+		while(laptopitr3.hasNext()) {
+			Laptop laptop=laptopitr3.next();
+			if(laptop.price<=25000 && laptop.color.equals("Black")) {
+				System.out.println(laptop.brand);
 			}			
 		}
 		System.out.println("................................");
 		System.out.println("Laptop Price < 25000rs or color is Black  ...........!");
 
-		Iterator<Laptop> itr4 =laptoplist.iterator();
-		while(itr4.hasNext()) {
-			Laptop lt=itr4.next();
-			if(lt.price<25000 || lt.color.equals("Black")) {
-				System.out.println(lt.brand);
+		Iterator<Laptop> laptopitr4 =laptoplist.iterator();
+		while(laptopitr4.hasNext()) {
+			Laptop laptop=laptopitr4.next();
+			if(laptop.price<25000 || laptop.color.equals("Black")) {
+				System.out.println(laptop.brand);
 			}			
 		}
-
+			//price>20000 & colour is block
+		System.out.println(".....................................");
+		System.out.println("Laptops whose price is more the 20000 and clour is black............");
+		for(Laptop laptop:laptoplist) {
+			if(laptop.price>20000 || laptop.color.equals("Black")) {
+				System.out.println(laptop);
+				
+			}
+			
+		}
+		
+		
+		
 	}
 
 }
