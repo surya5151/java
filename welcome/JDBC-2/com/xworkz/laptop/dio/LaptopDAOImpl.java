@@ -280,9 +280,11 @@ public class LaptopDAOImpl implements LaptopDAO {
 			System.out.println("Connection is sucessful "+url);
 			
 			Statement statement = connection.createStatement();
+			ResultSet resultSet=statement.executeQuery(readLaptopBrandByID);
+			resultSet.next();
+			System.out.println(resultSet.getNString(1));
 			
-			statement.execute(readLaptopBrandByID);		
-								
+			
 		} catch (Exception Exception) {
 			System.out.println("inside catch block sql exception");
 			System.out.println(Exception.getMessage());
@@ -313,7 +315,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String userName="root";
 		String password="surya1991";
 		
-		String readLaptopColorByID="select COLOR FROM laptops where ID=1; ";
+		String readLaptopColorByID="select COLOR FROM laptops where ID=7; ";
 		Connection connection = null;
 
 		try { 				
@@ -322,8 +324,10 @@ public class LaptopDAOImpl implements LaptopDAO {
 			System.out.println("Connection is sucessful "+url);
 			
 			Statement statement = connection.createStatement();
+			ResultSet resultSet=statement.executeQuery(readLaptopColorByID);
+			resultSet.next();
+			System.out.println(resultSet.getNString(1));
 			
-			statement.execute(readLaptopColorByID);		
 								
 		} catch (Exception Exception) {
 			System.out.println("inside catch block sql exception");
@@ -350,7 +354,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 
 	@Override
 	public void readLaptopPriceByID() {
-System.out.println("Invoked readLaptopPriceByID" );
+		System.out.println("Invoked readLaptopPriceByID" );
 		
 		String url="jdbc:mysql://localhost:3306/laptops";
 		String userName="root";
@@ -360,13 +364,15 @@ System.out.println("Invoked readLaptopPriceByID" );
 		Connection connection = null;
 
 		try { 				
-			connection = DriverManager.getConnection(url, userName, password);
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/laptops", userName, password);
 			
 			System.out.println("Connection is sucessful "+url);
 			
-			Statement statement = connection.createStatement();
+			Statement statement= connection.createStatement();
+			ResultSet resultSet = statement.executeQuery(readLaptopPriceByID);
+			resultSet.next();
+			System.out.println(resultSet.getDouble(1));
 			
-			statement.execute(readLaptopPriceByID);		
 								
 		} catch (Exception Exception) {
 			System.out.println("inside catch block sql exception");

@@ -10,16 +10,16 @@ public class LaptopTester {
 		
 		LaptopDAO laptopDAO = new LaptopDAOImpl();
 		
-		//laptopDAO.saveLaptopRecord();
-		//laptopDAO.updateBrand();				
-		//laptopDAO.updateBrandAndPrice();
-		//laptopDAO.deleteLaptopByID();		
-		//laptopDAO.readSingleRecordByID();
-		//laptopDAO.readAllRecords();
-			
-		laptopDAO.readLaptopBrandByID();		
-		//laptopDAO.readLaptopColorByID();
-		//laptopDAO.readLaptopPriceByID();
+//		laptopDAO.saveLaptopRecord();
+//		laptopDAO.updateBrand();				
+//		laptopDAO.updateBrandAndPrice();
+//		laptopDAO.deleteLaptopByID();		
+//		laptopDAO.readSingleRecordByID();
+//		laptopDAO.readAllRecords();
+//			
+	laptopDAO.readLaptopBrandByID();		
+//		laptopDAO.readLaptopColorByID();
+	//	laptopDAO.readLaptopPriceByID();
 		
 		
 		
