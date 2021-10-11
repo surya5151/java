@@ -15,7 +15,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String userName="root";
 		String password="surya1991";
 		
-		String insertQuery="INSERT INTO laptops VALUES  (9,'acer','white',30000); ";
+		String insertQuery="INSERT INTO laptops VALUES  (10,'acer2','white',35000); ";
 		Connection connection = null;
 
 		try { 				
@@ -57,7 +57,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String userName="root";
 		String password="surya1991";
 
-		String updateQuery="update laptops set BRAND='mackBook' where ID=3;";
+		String updateQuery="update laptops set BRAND='mackBook2' where ID=10;";
 		Connection connection = null;
 
 		try { 				
@@ -97,7 +97,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String userName="root";
 		String password="surya1991";
 
-		String updateBrandAndPrice="update laptops set brand='apple', PRICE=70000 where ID=3;";
+		String updateBrandAndPrice="update laptops set brand='mackbook', PRICE=25000 where ID=10;";
 		Connection connection = null;
 
 		try { 				
@@ -137,7 +137,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String userName="root";
 		String password="surya1991";
 
-		String deteOneRow ="delete from laptops where id=8;";
+		String deteOneRow ="delete from laptops where id=10;";
 		Connection connection = null;
 
 		try { 				
@@ -177,7 +177,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 		String userName="root";
 		String password="surya1991";
 
-		String readSingleRecordByID="select*from laptops where id=3;";
+		String readSingleRecordByID="select*from laptops where id=9;";
 		Connection connection = null;
 
 		try { 				
@@ -192,7 +192,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 				System.out.println(resultSet.getInt(1));
 				System.out.println(resultSet.getString(2));
 				System.out.println(resultSet.getString(3));
-				System.out.println(resultSet.getBoolean(4));
+				System.out.println(resultSet.getDouble(4));
 				System.out.println(".....................");
 			}
 								
@@ -239,7 +239,7 @@ public class LaptopDAOImpl implements LaptopDAO {
 				System.out.println(resultSet.getInt(1));
 				System.out.println(resultSet.getString(2));
 				System.out.println(resultSet.getString(3));
-				System.out.println(resultSet.getBoolean(4));
+				System.out.println(resultSet.getDouble(4));
 				System.out.println(".....................");
 			}
 								
